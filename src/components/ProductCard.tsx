@@ -7,7 +7,7 @@ import React from 'react';
 const ProductCard = ({ product }: { product: IWorkout }) => {
     return (
         <div>
-            <Link href={'/'} className='group block w-full overflow-hidden rounded-xl border border-[#252830] bg-[#15161B] text-white transition-all duration-300 hover:border-[#C2F800]/50 hover:shadow-lg hover:shadow-[#C2F800]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F800]'>
+            <Link href={`/dynamicProd/${product.id}`} className='group block w-full overflow-hidden rounded-xl border border-[#252830] bg-[#15161B] text-white transition-all duration-300 hover:border-[#C2F800]/50 hover:shadow-lg hover:shadow-[#C2F800]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F800]'>
             {/* Workout Image */}
                 <div className="relative aspect-[2/1] w-full overflow-hidden">
                     <Image
