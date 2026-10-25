@@ -45,8 +45,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-2">
-                    <Link href={''} className='btn rounded-full'><button>Plan (0)</button></Link>
-                    <Link href={''} className='btn rounded-full'><button>Saved (0)</button></Link>
+                    <Link href={'/myPlan'} className='btn rounded-full'><button>Plan (0)</button></Link>
+                    <Link href={'/myPlan'} className='btn rounded-full'><button>Saved (0)</button></Link>
                 </div>
             </div>
 

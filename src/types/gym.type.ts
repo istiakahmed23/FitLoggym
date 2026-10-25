@@ -13,3 +13,10 @@ export interface IWorkout {
   description: string;
   instructions: string[];
 }
+
+export interface IWorkoutProdContext{
+  planList: IWorkout[];
+  savedList: IWorkout[];
+  setPlanList:React.Dispatch<React.SetStateAction<IWorkout[]>>;
+  setSavedList:React.Dispatch<React.SetStateAction<IWorkout[]>>;
+}

@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
 import bannerImage from '@/assets/banner.png'
+import Link from 'next/link';
 
 const Banner = () => {
-    return (
-         <section className="w-full container  bg-[#0B0C0F] px-3 py-6 sm:px-5 lg:px-8">
+  return (
+    <section className="w-full container  bg-[#0B0C0F] px-3 py-6 sm:px-5 lg:px-8">
       <div className="container mx-auto grid w-full  grid-cols-1 items-center gap-6 rounded-xl border border-[#25272E] bg-[#15161B] px-6 py-8 sm:px-8 md:grid-cols-2 md:px-10 lg:px-12 lg:py-10">
 
         {/* Left Content */}
@@ -23,11 +24,21 @@ const Banner = () => {
             lock it into today's plan, and watch the week's work add up.
           </p>
 
-          <button
-            className="mt-5 rounded-md bg-[#C2F800] px-5 py-3 text-[10px] font-extrabold uppercase text-black transition-colors duration-200 hover:bg-[#d4ff33] focus:outline-none focus:ring-2 focus:ring-[#C2F800] focus:ring-offset-2 focus:ring-offset-[#15161B]"
+          {/* <Link
+            href="#library"
+            className="mt-5 inline-block rounded-md bg-[#C2F800] px-5 py-3 text-[10px] font-extrabold uppercase text-black transition-colors duration-200 hover:bg-[#d4ff33] focus:outline-none focus:ring-2 focus:ring-[#C2F800] focus:ring-offset-2 focus:ring-offset-[#15161B]"
           >
             Browse Workouts
-          </button>
+          </Link> */}
+
+
+          <a
+            href="#library"
+            className="mt-5 inline-block rounded-md bg-[#C2F800] px-5 py-3 text-[10px] font-extrabold uppercase text-black transition-colors duration-200 hover:bg-[#d4ff33]"
+          >
+            Browse Workouts
+          </a>
+
         </div>
 
         {/* Right Image */}
@@ -46,7 +57,7 @@ const Banner = () => {
 
       </div>
     </section>
-    );
+  );
 };
 
 export default Banner;

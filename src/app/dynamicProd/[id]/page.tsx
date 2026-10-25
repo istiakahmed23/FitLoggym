@@ -1,3 +1,4 @@
+import DetailButton from '@/components/DetailButton';
 import { getSingleProd } from '@/dataFetch/api';
 import { Bookmark, CalendarPlus } from 'lucide-react';
 import Image from 'next/image';
@@ -103,25 +104,7 @@ const ProductDetails = async ({ params, }: DetailsPageProps) => {
                         </section>
 
                         {/* Workout Actions */}
-                        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-
-                            <button
-                                type="button"
-                                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#C2F800] px-4 py-3 text-xs font-bold text-black transition-colors hover:bg-[#D5FF38] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F800] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F12]"
-                            >
-                                <CalendarPlus size={14} />
-                                Add to today's plan
-                            </button>
-
-                            <button
-                                type="button"
-                                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-[#30343D] bg-transparent px-4 py-3 text-xs font-medium text-[#D1D5DB] transition-colors hover:border-[#C2F800] hover:text-[#C2F800] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C2F800]"
-                            >
-                                <Bookmark size={14} />
-                                Save for later
-                            </button>
-                        </div>
-
+                        <DetailButton product={product} />
                         {/* Back Link */}
                         <Link
                             href="/"

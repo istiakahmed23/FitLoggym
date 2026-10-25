@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 
 const Allproducts = ({products}: {products: IWorkout[]}) => {
     return (
-        <div className='container mx-auto p-4'>
+        <div id="library" className='container mx-auto p-4'>
             <div>
                 <div className='pb-4'>
                     <h2 className='font-bold text-[36px]'>THE LIBRARY</h2>
