@@ -1,5 +1,4 @@
 'use client'
-
 import { IWorkout, IWorkoutProdContext } from "@/types/gym.type";
 import { createContext, ReactNode, useContext, useState } from "react"
 

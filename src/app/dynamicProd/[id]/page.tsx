@@ -57,7 +57,7 @@ const ProductDetails = async ({ params, }: DetailsPageProps) => {
 
                         {/* Muscle Groups */}
                         <div className="mt-3 flex flex-wrap gap-2">
-                            {product.muscleGroups.map((muscleGroup) => (
+                            {product.muscleGroups.map((muscleGroup: string) => (
                                 <span
                                     key={muscleGroup}
                                     className="rounded-full bg-[#C2F800] px-2.5 py-1 text-[10px] font-semibold text-black"
@@ -95,7 +95,7 @@ const ProductDetails = async ({ params, }: DetailsPageProps) => {
                             </h2>
 
                             <ol className="mt-3 list-inside list-decimal space-y-2.5 text-xs leading-5 text-[#C0C3CC]">
-                                {product.instructions.map((instruction, index) => (
+                                {product.instructions.map((instruction:string, index:number) => (
                                     <li key={`${product.id}-instruction-${index}`}>
                                         {instruction}
                                     </li>
