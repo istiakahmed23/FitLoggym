@@ -68,7 +68,7 @@ const PlanCard = ({
                 {/* Actions */}
                 <div className="flex shrink-0 flex-wrap items-center gap-2 sm:ml-auto sm:justify-end">
                     <Link
-                        href={`/workouts/${product.id}`}
+                        href={`/dynamicProd/${product.id}`}
                         className="inline-flex min-h-8 items-center justify-center rounded-full border border-[#343945] px-3 py-2 text-[10px] text-[#E0E2E7] transition hover:border-[#C2F800] hover:text-[#C2F800]"
                     >
                         View Details
