@@ -3,6 +3,7 @@ import logo from '@/assets/logo.png'
 import Image from 'next/image';
 import Link from 'next/link';
 import Navlinks from './Navlinks';
+import NavbarBtn from './NavbarBtn';
 
 const Navbar = () => {
     const navLinks=(
@@ -45,8 +46,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-2">
-                    <Link href={'/myPlan'} className='btn rounded-full'><button>Plan (0)</button></Link>
-                    <Link href={'/myPlan'} className='btn rounded-full'><button>Saved (0)</button></Link>
+                    <NavbarBtn/> 
                 </div>
             </div>
 
