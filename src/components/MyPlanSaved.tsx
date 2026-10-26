@@ -3,6 +3,7 @@ import { useProductContext } from '@/context/ProductContext';
 import React, { useState } from 'react';
 import PlanCard from './PlanCard';
 import { IWorkout } from '@/types/gym.type';
+import Link from 'next/link';
 
 const MyPlanSaved = () => {
     const { planList, setPlanList, savedList, setSavedList } = useProductContext();
@@ -233,17 +234,34 @@ const MyPlanSaved = () => {
                         ))
                     ) : (
                         <div className="rounded-xl border border-dashed border-[#30343D] px-4 py-12 text-center">
-                            <p className="text-sm font-semibold text-white">
+                            <p className="text-[20px] font-bold text-white">
                                 {isSavedTab
-                                    ? "No saved workouts yet"
-                                    : "No workouts in your plan yet"}
+                                    ? "NOTHING HERE YET"
+                                    : "NOTHING HERE YET"}
                             </p>
 
                             <p className="mt-2 text-xs text-[#858C98]">
                                 {isSavedTab
-                                    ? "Save a workout to find it here later."
-                                    : "Add a workout to start building your daily plan."}
+                                    ? "Browse the library and add a lift to get today moving."
+                                    : "Browse the library and add a lift to get today moving."}
                             </p>
+
+                            <Link
+                                href="/"
+                                className="mt-5 inline-flex min-h-10 items-center justify-center rounded-full bg-[#c4ff00] px-5 py-2 text-[11px] font-bold text-[#111408] shadow-[0_0_20px_rgba(196,255,0,0.08)] transition duration-200 hover:bg-[#d5ff4d] hover:shadow-[0_0_24px_rgba(196,255,0,0.16)] active:scale-95"
+                            >
+                                Go to workouts
+                                <svg
+                                    aria-hidden="true"
+                                    className="ml-2 h-3.5 w-3.5"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                >
+                                    <path d="M5 12h14m-6-6 6 6-6 6" />
+                                </svg>
+                            </Link>
                         </div>
                     )}
                 </div>
