@@ -1,33 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+FitLog — Workout Planner
 
-## Getting Started
+A modern, responsive workout planning application that helps users explore workouts, build their daily fitness plans, save favorite workouts, and track their progress in one place.
 
-First, run the development server:
+Technologies Used->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js — React framework for building the application
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+React — Component-based user interface
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+TypeScript — Type safety and improved code reliability
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS — Responsive and modern UI styling
 
-## Learn More
+Lucide React — Clean and consistent icons
 
-To learn more about Next.js, take a look at the following resources:
+React Context API — Shared workout and saved-list state management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Key Features ->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Explore Workouts — Browse workout cards and discover exercises with useful information, including duration, calories burned, and ratings.
+
+Build Your Workout Plan — Add workouts to your personal plan and organize your daily fitness routine.
+
+Save Favorite Workouts — Save workouts to a separate list so you can easily find them later.
+
+Track Workout Completion — Mark planned workouts as completed and monitor your daily progress.
+
+Sort and Manage Workouts — Sort workouts by duration, calories burned, or rating, and remove workouts from your plan or saved list.
+
 
 ## Deploy on Vercel
 
